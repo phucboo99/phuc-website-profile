@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script>try{var d=document.documentElement,q=location.search;if(matchMedia('(hover: hover) and (pointer: fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&localStorage.getItem('liveCursors')!=='off'&&!/[?&]build=0/.test(q)&&(/[?&]build=1/.test(q)||(!sessionStorage.getItem('lcBuilt')&&!location.hash)))d.classList.add('lc-prebuild')}catch(e){}</script>
   <script>try{var t=new URLSearchParams(location.search).get('theme')||localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,8 +21,9 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/css/shell.css?v=20261102" rel="stylesheet">
-  <link href="assets/css/portfolio.css?v=20261102" rel="stylesheet">
+  <link href="assets/css/shell.css?v=20261105" rel="stylesheet">
+  <link href="assets/css/portfolio.css?v=20261105" rel="stylesheet">
+  <link href="assets/css/live-cursors.css?v=7" rel="stylesheet">
 
   <script type="application/ld+json">
   {
@@ -67,9 +69,8 @@
         <ul id="menu">
           <li><a href="#about">About</a></li>
           <li><a href="#expertise">Expertise</a></li>
-          <li><a href="#work">Work &amp; Experience</a></li>
-          <li><a href="#samples">Samples</a></li>
-          <li><a href="#writing">Writing</a></li>
+          <li><a href="#versions">Versions</a></li>
+          <li><a href="#work">Work &amp; Experience</a></li>          <li><a href="#writing">Writing</a></li>
           <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
       </div>
@@ -182,6 +183,78 @@
       </div>
     </section>
 
+    <!-- Versions -->
+    <section id="versions">
+      <div class="wrap">
+        <p class="eyebrow">Growth</p>
+        <h2 class="title">My version history</h2>
+        <p class="lead">I upgrade myself like a product: a new major version every year or two. Here is the changelog.</p>
+        <div class="versions">
+          <article class="vcard reveal">
+            <div class="vhead">
+              <span class="vnum">v1.0</span>
+              <div class="vtitle"><h3>Manual QC</h3><span class="vyears">2022 – 2024</span></div>
+              <span class="vpill">Shipped</span>
+            </div>
+            <p class="vtag">Foundation: understand the product and test it by hand.</p>
+            <h4>What's new</h4>
+            <ul class="vnotes">
+              <li>100% manual testing: test planning, test case design, execution and regression.</li>
+              <li>Sprint demos to international clients and clear bug reports every sprint.</li>
+              <li>Worked in Scrum teams that shrank from 13 people to 3, so I learned to own quality end to end.</li>
+            </ul>
+            <ul class="chips"><li>Manual</li><li>Test Design</li><li>Regression</li><li>Sprint Demo</li><li>Scrum</li></ul>
+          </article>
+          <article class="vcard reveal">
+            <div class="vhead">
+              <span class="vnum">v2.0</span>
+              <div class="vtitle"><h3>Test Automation</h3><span class="vyears">2024 – 2025</span></div>
+              <span class="vpill">Shipped</span>
+            </div>
+            <p class="vtag">Start automating what repeats.</p>
+            <h4>What's new</h4>
+            <ul class="vnotes">
+              <li>Started test automation with Cypress and Playwright.</li>
+              <li>Automated key regression flows and cut manual regression time by about 40%.</li>
+              <li>2025: joined AT Crew to help teams across the company adopt automation, and supported the GRIDSZ Data team with Cypress.</li>
+            </ul>
+            <ul class="chips"><li class="tool t-cypress">Cypress</li><li class="tool t-playwright">Playwright</li><li>Regression</li><li>Automation Strategy</li><li>Coaching</li></ul>
+          </article>
+          <article class="vcard reveal latest">
+            <div class="vhead">
+              <span class="vnum">v3.0</span>
+              <div class="vtitle"><h3>AI-augmented QC</h3><span class="vyears">2025 – Present</span></div>
+              <span class="vpill now">Latest</span>
+            </div>
+            <p class="vtag">Let AI work at every step of QC.</p>
+            <h4>What's new</h4>
+            <ul class="vnotes">
+              <li>Applying AI at every step of the QC workflow: requirement analysis, test design, exploration, automation scripts and reporting.</li>
+              <li>Built a custom agent that generates test cases from Jira/Confluence via Atlassian MCP, and use Playwright MCP for exploratory testing and script generation.</li>
+              <li>Test AI-built products (IDEA team with Claude and Spec Kit) and judge the effectiveness of AI output on the drawing-processing solution.</li>
+            </ul>
+            <ul class="chips"><li class="tool t-claude">Claude</li><li class="tool t-speckit">Spec Kit</li><li class="tool t-playwright">Playwright MCP</li><li class="tool t-jira">Atlassian MCP</li><li>Custom Agents</li><li>AI Quality</li></ul>
+          </article>
+        </div>
+
+        <!--
+          NEXT VERSION (copy this card at the end of the list, each year):
+          <article class="vcard reveal latest">
+            <div class="vhead">
+              <span class="vnum">v4.0</span>
+              <div class="vtitle"><h3>Version name</h3><span class="vyears">2026 – Present</span></div>
+              <span class="vpill now">Latest</span>
+            </div>
+            <p class="vtag">One-line theme of this version.</p>
+            <h4>What's new</h4>
+            <ul class="vnotes"><li>What changed in how you work.</li></ul>
+            <ul class="chips"><li class="tool t-playwright">Playwright</li></ul>
+          </article>
+          Also remove class "latest" and set the pill to "Shipped" on the previous version.
+        -->
+      </div>
+    </section>
+
     <!-- Work & Experience -->
     <section id="work">
       <div class="wrap">
@@ -275,25 +348,6 @@
           </div>
         -->
 
-        <h3 class="subtitle-xp">Core responsibilities across projects</h3>
-        <div class="cards">
-          <article class="card reveal">
-            <div class="ico"><i class="bi bi-clipboard-data"></i></div>
-            <h3>Test strategy &amp; planning</h3>
-            <p>Test plans, timeline estimates and detailed test cases for complex multi-platform features.</p>
-          </article>
-          <article class="card reveal">
-            <div class="ico"><i class="bi bi-plug"></i></div>
-            <h3>API testing</h3>
-            <p>RESTful APIs with Postman, JMeter and Swagger, including automated collection runs and environment variable management.</p>
-          </article>
-          <article class="card reveal">
-            <div class="ico"><i class="bi bi-lightning-charge"></i></div>
-            <h3>Automation &amp; mentoring</h3>
-            <p>Cypress/Playwright regression that cut manual testing time by 40%, plus reviews and guidance for junior QC members.</p>
-          </article>
-        </div>
-
         <h3 class="subtitle-xp">Education</h3>
         <ol class="timeline">
           <li class="reveal">
@@ -304,78 +358,6 @@
         </ol>
 
         <p class="more-link">Want the deeper dives? Read my <a href="blog.html">articles on AI-assisted testing and automation</a>.</p>
-      </div>
-    </section>
-
-    <!-- QA samples -->
-    <section id="samples" class="alt">
-      <div class="wrap">
-        <p class="eyebrow">QA samples</p>
-        <h2 class="title">How I document quality</h2>
-        <p class="lead">Illustrative examples of the artifacts I write. Real project artifacts are confidential, so these use a fictional login and checkout feature.</p>
-
-        <div class="tabs" role="tablist" aria-label="QA sample artifacts">
-          <button class="on" role="tab" data-tab="tc">Test cases</button>
-          <button role="tab" data-tab="bug">Bug report</button>
-          <button role="tab" data-tab="plan">Test approach</button>
-        </div>
-
-        <div class="tab-panel on reveal" data-panel="tc">
-          <div class="table-wrap">
-            <table class="qa-table">
-              <thead><tr><th>ID</th><th>Title</th><th>Technique</th><th>Steps</th><th>Expected result</th><th>Priority</th></tr></thead>
-              <tbody>
-                <tr><td>TC-LOGIN-001</td><td>Login with valid credentials</td><td><span class="tech">EP · valid</span></td><td>1. Open /login<br>2. Enter a registered email and valid password<br>3. Click Sign in</td><td>User lands on the dashboard and a session is created</td><td><span class="prio high">High</span></td></tr>
-                <tr><td>TC-LOGIN-002</td><td>Password at the minimum length (8)</td><td><span class="tech">BVA · boundary</span></td><td>1. Sign in with an account whose password has exactly 8 characters</td><td>Login succeeds</td><td><span class="prio med">Medium</span></td></tr>
-                <tr><td>TC-LOGIN-003</td><td>Set a password one below the minimum (7)</td><td><span class="tech">BVA · boundary</span></td><td>1. Open Change password<br>2. Enter a 7-character password<br>3. Submit</td><td>Validation message: "Password must be at least 8 characters"</td><td><span class="prio med">Medium</span></td></tr>
-                <tr><td>TC-LOGIN-004</td><td>Invalid email format</td><td><span class="tech">EP · invalid</span></td><td>1. Enter "user@" as the email<br>2. Click Sign in</td><td>Inline error is shown and no request is sent</td><td><span class="prio med">Medium</span></td></tr>
-                <tr><td>TC-LOGIN-005</td><td>Account lock after 5 failed attempts</td><td><span class="tech">Decision table</span></td><td>1. Enter a wrong password 5 times<br>2. Enter the correct password</td><td>Account is locked for 15 minutes, a message is shown and the correct password is rejected during the lock</td><td><span class="prio high">High</span></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="note">EP = equivalence partitioning, BVA = boundary value analysis.</p>
-        </div>
-
-        <div class="tab-panel reveal" data-panel="bug">
-          <article class="bug">
-            <div class="bug-top">
-              <span class="bug-id">BUG-101</span>
-              <span class="prio high">Severity: Major</span>
-              <span class="prio med">Priority: High</span>
-              <span class="pill st-active">Open</span>
-            </div>
-            <h3>Order total is not recalculated after removing a promo code at checkout</h3>
-            <dl class="bug-meta">
-              <div><dt>Environment</dt><dd>Staging · Chrome 130 · Windows 11</dd></div>
-              <div><dt>Build</dt><dd>2.14.0-rc2</dd></div>
-              <div><dt>Found in</dt><dd>Sprint 14 regression</dd></div>
-            </dl>
-            <h4>Steps to reproduce</h4>
-            <ol>
-              <li>Add any product to the cart and open checkout.</li>
-              <li>Apply promo code <code>SPRING10</code>; the total drops by 10%.</li>
-              <li>Click Remove next to the promo code.</li>
-            </ol>
-            <div class="bug-cols">
-              <div><h4>Expected</h4><p>The promo line disappears and the total returns to the original amount.</p></div>
-              <div><h4>Actual</h4><p>The promo line disappears but the total keeps the discounted amount until the page is reloaded.</p></div>
-            </div>
-            <p class="note">Attachments: screen recording, network log (HAR). Suspected cause: totals are only recalculated on apply, not on remove.</p>
-          </article>
-        </div>
-
-        <div class="tab-panel reveal" data-panel="plan">
-          <div class="plan-grid">
-            <div class="plan-item"><b>Scope</b><p>Features in and out of scope, supported browsers and devices, integrations.</p></div>
-            <div class="plan-item"><b>Risks</b><p>Product risks ranked by impact and likelihood to decide where to test deepest.</p></div>
-            <div class="plan-item"><b>Approach</b><p>Manual and exploratory sessions, API checks, and which flows are automated for regression.</p></div>
-            <div class="plan-item"><b>Environments &amp; data</b><p>Test environments, accounts, seed data and third-party sandboxes.</p></div>
-            <div class="plan-item"><b>Entry &amp; exit criteria</b><p>What must be ready to start testing and what "done" means for the release.</p></div>
-            <div class="plan-item"><b>Reporting</b><p>Daily defect status, regression results and a clear release-readiness summary.</p></div>
-          </div>
-        </div>
-
-        <!-- Replace the sample content above with your own (anonymised) test cases, bug report and plan outline. -->
       </div>
     </section>
 
@@ -520,8 +502,9 @@
   </footer>
 
   <button id="toTop" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
-  <script src="assets/js/portfolio.js?v=20261102"></script>
-  <script src="assets/js/i18n.js?v=20261102"></script>
+  <script src="assets/js/portfolio.js?v=20261105"></script>
+  <script src="assets/js/live-cursors.js?v=12"></script>
+  <script src="assets/js/i18n.js?v=20261105"></script>
 </body>
 
 </html>

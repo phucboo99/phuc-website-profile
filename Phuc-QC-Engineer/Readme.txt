@@ -20,7 +20,7 @@ assets/css/shell.css      Màu, thanh trên cùng (top bar + menu) và footer d�
 assets/css/portfolio.css  Giao diện trang chủ + trang blog (thẻ, banner, hiệu ứng, dark mode...)
 assets/css/articles.css   Chỉnh riêng cho 5 bài viết + dark mode của bài viết
 assets/css/main.css       CSS cũ của template, chỉ còn dùng cho 5 bài viết
-assets/js/portfolio.js    Hiệu ứng, banner tự chạy, tab QA samples, form liên hệ, nút dark mode, thời gian làm việc
+assets/js/portfolio.js    Hiệu ứng, banner tự chạy, form liên hệ, nút dark mode, thời gian làm việc
 assets/js/i18n.js         Bản dịch tiếng Việt (nút VI/EN)
 assets/js/theme.js        Nút dark mode cho 5 bài viết
 assets/Phuc-Tan-Dinh-CV.pdf   File CV cho nút Download CV
@@ -31,7 +31,7 @@ CÁCH CẬP NHẬT NỘI DUNG (trong index.html)
 1) Dự án / Kinh nghiệm   - mục id="work". Mỗi dự án là một <li> trong <ol class="timeline">.
                            Công ty mới: copy khối <div class="employer"> (có mẫu trong comment) và đặt công ty mới nhất lên trên.
                            Thẻ công cụ dùng class "tool t-<tên>" để có màu thương hiệu (Postman, Cypress...).
-2) Mẫu QA thực tế        - mục id="samples": thay test case, bug report, test approach bằng tài liệu thật (đã ẩn thông tin nhạy cảm).
+2) Phiên bản bản thân   - mục id="versions": mỗi năm copy mẫu trong comment để thêm v4.0, v5.0...; bỏ class "latest" ở thẻ cũ.
 3) Banner bài viết       - mỗi bài là một <article class="slide"> trong <div class="banner">; chấm điều hướng tự sinh.
                            Banner "Beyond testing" dùng kiểu "banner photo" (nền tối, ảnh nghiêng).
 4) Số liệu, About, Skills - sửa trực tiếp trong index.html (hero, mục id="about", id="expertise").
@@ -46,6 +46,16 @@ Khi đổi link mạng xã hội, email hay mục menu, hãy tìm và sửa ở 
 - Facebook:  https://www.facebook.com/phuc.boo.99/    Instagram: https://www.instagram.com/boosunofmemories/
 - Trang chủ còn một hàng icon mạng xã hội nữa trong mục Contact.
 
+
+LIVE CURSORS & CHẾ ĐỘ "XEM TRANG ĐƯỢC DỰNG" (assets/js/live-cursors.js + live-cursors.css)
+- Các con trỏ nhiều màu là MÔ PHỎNG (không phải người xem thật). Tên, màu, câu thoại, nhiệm vụ của từng con nằm ở đầu file JS (mảng PEOPLE).
+- Lần đầu vào trang trong một phiên (sessionStorage "lcBuilt"), trang hiện dưới dạng khung phác thảo; các con trỏ kéo khung, nội dung hiện ra
+  và trang tự cuộn chậm liên tục (vừa cuộn vừa dựng, từ trên xuống). Cuộn chuột / chạm / bấm phím / bấm chuột hoặc nút "Skip" sẽ hiện toàn bộ ngay.
+- Thử lại: nút "Replay build" ở góc dưới trái, hoặc thêm ?build=1 vào địa chỉ. Tắt hẳn chế độ dựng: ?build=0. Nút "Live cursors" bật/tắt tất cả.
+- Chỉ chạy trên máy có chuột; tự tắt trên điện thoại và khi máy bật "giảm chuyển động".
+- Nhịp dựng chỉnh ở đầu file JS: BLOCK_MS (thời gian mỗi người làm một khối), SCROLL_MIN / SCROLL_MAX (tốc độ cuộn chậm nhất / nhanh nhất), FRONTIER_Y (vị trí phần đang dựng trên màn hình).
+- Mỗi người chỉ nhận loại khối hợp vai trò (Copywriter gõ vài chữ đầu của ô chữ rồi nội dung thật hiện ra; Photo cắt ảnh; ...). Header cũng được dựng.
+- Danh sách khối được "dựng" là hằng BLOCKS trong JS; thêm class vào đó nếu muốn một phần tử mới cũng được dựng.
 
 FORM LIÊN HỆ
 - Dùng Formspree: thuộc tính action của <form id="contactForm"> trong index.html (https://formspree.io/f/xqppdzky).
@@ -77,4 +87,4 @@ GIT / ĐĂNG BÀI
 
 GHI CÔNG
 Giao diện gốc dựa trên template iBlog / iPortfolio của BootstrapMade.com (https://bootstrapmade.com/license/).
-Phần giao diện hiện tại (trang chủ, banner, QA samples, đa ngôn ngữ, dark mode...) đã được thiết kế lại cho website này.
+Phần giao diện hiện tại (trang chủ, banner, lịch sử phiên bản, đa ngôn ngữ, dark mode...) đã được thiết kế lại cho website này.

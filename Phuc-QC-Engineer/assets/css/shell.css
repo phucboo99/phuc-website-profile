@@ -128,3 +128,5 @@
     --accent-soft: #0f2a2c;
     --shadow: 0 8px 28px rgba(0, 0, 0, .35);
   }
+
+@media (max-width: 1000px) { .site-nav ul { gap: 16px; } .site-nav ul a { font-size: .86rem; } }

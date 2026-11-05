@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script>try{var d=document.documentElement,q=location.search;if(matchMedia('(hover: hover) and (pointer: fine)').matches&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&localStorage.getItem('liveCursors')!=='off'&&!/[?&]build=0/.test(q)&&(/[?&]build=1/.test(q)||(!sessionStorage.getItem('lcBuilt')&&!location.hash)))d.classList.add('lc-prebuild')}catch(e){}</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Phuc Tan Dinh | QC Engineer (Cinematic preview)</title>
+  <meta name="description" content="Preview of a dark cinematic portfolio design for Phuc Tan Dinh, QC Engineer.">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/cinematic.css?v=1" rel="stylesheet">
+  <link href="assets/css/live-cursors.css?v=7" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="preview-flag">Design preview · <a href="index.html">View current design</a></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="logo" href="#top">PTD<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#versions">Versions</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact" class="nav-cta">Let's talk</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="glow"></div>
+      <p class="hero-label"><i></i> Portfolio 2026 · Phuc Tan Dinh</p>
+
+      <h1 class="hero-title back" aria-label="QC Engineer">
+        <span>QC</span>
+        <span>Engineer</span>
+      </h1>
+
+      <figure class="portrait">
+        <!-- Drop a transparent PNG at assets/img/portrait-cutout.png to get the real overlap effect.
+             Until then the regular photo is used with a soft mask. -->
+        <img src="assets/img/portrait-cutout.png" alt="Phuc Tan Dinh"
+             onerror="this.onerror=null;this.src='assets/img/my-profile-img.jpg';this.classList.add('fallback');this.closest('.hero').classList.add('no-cutout')">
+      </figure>
+
+      <h1 class="hero-title front" aria-hidden="true">
+        <span>QC</span>
+        <span>Engineer</span>
+      </h1>
+
+      <p class="hero-intro">Nearly 5 years of manual testing, automation and <b>AI-assisted QA</b>. I help teams catch defects earlier and ship with confidence.</p>
+      <div class="hero-actions">
+        <a class="btn red" href="#work">See my work <i class="bi bi-arrow-right"></i></a>
+        <a class="btn line" href="assets/Phuc-Tan-Dinh-CV.pdf" download="Phuc-Tan-Dinh-CV.pdf"><i class="bi bi-download"></i> CV</a>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll down"><span></span> Scroll</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <span>Manual testing</span><i>✦</i><span>Cypress</span><i>✦</i><span>Playwright</span><i>✦</i><span>API testing</span><i>✦</i><span>AI-assisted QA</span><i>✦</i><span>Exploratory</span><i>✦</i><span>Regression</span><i>✦</i>
+        <span>Manual testing</span><i>✦</i><span>Cypress</span><i>✦</i><span>Playwright</span><i>✦</i><span>API testing</span><i>✦</i><span>AI-assisted QA</span><i>✦</i><span>Exploratory</span><i>✦</i><span>Regression</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="wrap grid4">
+        <div class="stat reveal"><b>~<span data-count="5">5</span></b><span>years in QA</span></div>
+        <div class="stat reveal"><b><span data-count="40">40</span>%</b><span>less manual regression effort</span></div>
+        <div class="stat reveal"><b><span data-count="6">6</span></b><span>projects &amp; teams</span></div>
+        <div class="stat reveal"><b><span data-count="3">3</span></b><span>running in parallel today</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div>
+          <p class="kicker">01 — About</p>
+          <h2 class="big reveal">Quality is a team habit, <em>not a final phase.</em></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>I'm a Junior QC Engineer at Infodation, working on complex multi-platform products. I design test strategies, write detailed test cases and automate critical business flows.</p>
+          <p>Lately I focus on <b>AI-assisted testing</b>: Playwright MCP, custom agents and Atlassian MCP to speed up exploratory testing, script generation and test case design, with a human always in the loop for judgement.</p>
+          <ul class="facts">
+            <li><span>Based in</span><b>Nha Trang, Vietnam (UTC+7)</b></li>
+            <li><span>Education</span><b>B.Sc. IT, Nha Trang University</b></li>
+            <li><span>Languages</span><b>Vietnamese, English</b></li>
+            <li><span>Availability</span><b class="red-t">Open to remote roles</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERSIONS -->
+    <section class="section dark2" id="versions">
+      <div class="wrap">
+        <p class="kicker">02 — Version history</p>
+        <h2 class="big reveal">I upgrade myself <em>like a product.</em></h2>
+
+        <div class="vlist">
+          <article class="vrow reveal">
+            <div class="vnum">v1.0</div>
+            <div class="vmeta"><h3>Manual QC</h3><span>2022 – 2024</span><em class="tagline">Foundation</em></div>
+            <ul>
+              <li>100% manual testing: planning, test case design, execution and regression.</li>
+              <li>Sprint demos to international clients and clear bug reports every sprint.</li>
+              <li>Scrum teams that shrank from 13 people to 3: owning quality end to end.</li>
+            </ul>
+          </article>
+          <article class="vrow reveal">
+            <div class="vnum">v2.0</div>
+            <div class="vmeta"><h3>Test Automation</h3><span>2024 – 2025</span><em class="tagline">Automate what repeats</em></div>
+            <ul>
+              <li>Started automation with Cypress and Playwright.</li>
+              <li>Automated key regression flows and cut manual regression time by about 40%.</li>
+              <li>Joined AT Crew to help teams adopt automation; supported GRIDSZ Data with Cypress.</li>
+            </ul>
+          </article>
+          <article class="vrow latest reveal">
+            <div class="vnum">v3.0</div>
+            <div class="vmeta"><h3>AI-augmented QC</h3><span>2025 – Now</span><em class="tagline now">Latest · running</em></div>
+            <ul>
+              <li>AI at every step of the QC workflow: analysis, test design, exploration, scripts and reporting.</li>
+              <li>Custom agent generating test cases from Jira/Confluence via Atlassian MCP; Playwright MCP for exploratory testing.</li>
+              <li>Testing AI-built products: IDEA team (Claude + Spec Kit) and the drawing-processing solution.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <p class="kicker">03 — Selected work</p>
+        <h2 class="big reveal">Where I've worked <em>at Infodation.</em></h2>
+        <p class="sub reveal">Junior QC Engineer since Feb 2022 · Nha Trang, Vietnam · currently on 3 projects in parallel.</p>
+
+        <div class="projects">
+          <article class="proj reveal">
+            <span class="num">01</span>
+            <span class="status live">Active</span>
+            <h3>AI drawing-processing solution</h3>
+            <p class="role">QC · Oct 2026 – Now</p>
+            <p>AI tool that scans and processes engineering drawings. I'm responsible for how well it actually performs: does the AI output save the client's team time?</p>
+            <ul class="tags"><li>AI Quality</li><li>Effectiveness testing</li></ul>
+          </article>
+          <article class="proj reveal">
+            <span class="num">02</span>
+            <span class="status">Aug – Oct 2026</span>
+            <h3>IDEA · Infodation Enterprise Application</h3>
+            <p class="role">QC · Aug – Oct 2026</p>
+            <p>Internal tools built 100% with AI, using Claude and Spec Kit. I tested with AI assistance and built Playwright automation for the new apps.</p>
+            <ul class="tags"><li>Claude</li><li>Spec Kit</li><li>Playwright</li></ul>
+          </article>
+          <article class="proj reveal">
+            <span class="num">03</span>
+            <span class="status">Apr 2025 – Jul 2026</span>
+            <h3>AT Crew · automation enablement</h3>
+            <p class="role">QC · 3 QC + a management lead</p>
+            <p>Formed when the company began rolling out automation testing. We guided and onboarded teams and resolved the practical obstacles of applying automation.</p>
+            <ul class="tags"><li>Automation strategy</li><li>Coaching</li><li>Cypress</li></ul>
+          </article>
+          <article class="proj reveal">
+            <span class="num">04</span>
+            <span class="status">Jul – Sep 2025</span>
+            <h3>GRIDSZ Data team</h3>
+            <p class="role">QC · automation support</p>
+            <p>Embedded with the team to support Cypress automation while they struggled to adopt it, and helped unblock a workable approach.</p>
+            <ul class="tags"><li>Cypress</li><li>Support</li></ul>
+          </article>
+          <article class="proj reveal">
+            <span class="num">05</span>
+            <span class="status live">Active</span>
+            <h3>Belgian internet-connection platform</h3>
+            <p class="role">QC · Oct 2023 – Now · 2 DEV + 1 QC</p>
+            <p>Platform that manages and tracks the rollout of internet connections to households. Small team: I own testing end to end and the sprint demos for the client.</p>
+            <ul class="tags"><li>Manual</li><li>Sprint demo</li><li>Small-team QA</li></ul>
+          </article>
+          <article class="proj reveal">
+            <span class="num">06</span>
+            <span class="status">Maintenance</span>
+            <h3>Dutch internet-connection platform</h3>
+            <p class="role">QC · Feb 2022 – Now · 10 DEV + 3 QC → 2 DEV + 1 QC</p>
+            <p>Same platform concept for the Netherlands. Test planning, test case design and execution every sprint, with a client demo every 2 weeks, now in maintenance.</p>
+            <ul class="tags"><li>Manual</li><li>Regression</li><li>Sprint demo</li><li>Scrum</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="section dark2" id="expertise">
+      <div class="wrap">
+        <p class="kicker">04 — Expertise</p>
+        <h2 class="big reveal">What I bring <em>to a team.</em></h2>
+        <ul class="skills">
+          <li class="reveal"><span>01</span><h3>Manual &amp; exploratory testing</h3><p>Test design (EP, BVA, decision tables), functional, UAT, exploratory.</p></li>
+          <li class="reveal"><span>02</span><h3>UI test automation</h3><p>Maintainable E2E suites with Playwright, Cypress and Selenium.</p></li>
+          <li class="reveal"><span>03</span><h3>API &amp; performance</h3><p>REST validation with Postman and Swagger; load testing with JMeter.</p></li>
+          <li class="reveal"><span>04</span><h3>AI-assisted testing</h3><p>MCP servers and custom agents for test cases, exploration and self-healing scripts.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section" id="writing">
+      <div class="wrap">
+        <p class="kicker">05 — Writing</p>
+        <h2 class="big reveal">Notes from <em>real projects.</em></h2>
+        <ol class="posts">
+          <li class="reveal"><a href="exploration-testing-with-playwright-mcp.html"><span class="n">01</span><span class="t">Exploratory Testing with Playwright MCP</span><span class="c">AI Testing · Dec 2025</span><i class="bi bi-arrow-up-right"></i></a></li>
+          <li class="reveal"><a href="custom-agent-automated-component-page-test-case-generation-via-atlassian-mcp.html"><span class="n">02</span><span class="t">Custom Agent: Automated Component, Page &amp; Test Case Generation via Atlassian MCP</span><span class="c">Quality Solutions · Apr 2026</span><i class="bi bi-arrow-up-right"></i></a></li>
+          <li class="reveal"><a href="how-to-get-an-effective-element-in-automated-testing-with-cypress-csharp-projects.html"><span class="n">03</span><span class="t">How to Get an Effective Element in Automated Testing with Cypress (C# Projects)</span><span class="c">Automation · Apr 2026</span><i class="bi bi-arrow-up-right"></i></a></li>
+          <li class="reveal"><a href="how-to-integrate-playwright-mcp-for-ai-driven-test-automation.html"><span class="n">04</span><span class="t">How to Integrate Playwright MCP for AI-Driven Test Automation</span><span class="c">Automation · Dec 2025</span><i class="bi bi-arrow-up-right"></i></a></li>
+          <li class="reveal"><a href="self-healing-in-test-automation.html"><span class="n">05</span><span class="t">Self-Healing in Automation Testing</span><span class="c">Quality Solutions · Nov 2025</span><i class="bi bi-arrow-up-right"></i></a></li>
+        </ol>
+        <p class="all"><a class="btn line" href="blog.html">All articles <i class="bi bi-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <p class="kicker">06 — Contact</p>
+        <h2 class="huge reveal">Let's build <em>quality</em> together.</h2>
+        <div class="contact-grid">
+          <div class="reveal">
+            <p>Hiring for a QA / QC role or need help with test automation? I'd be glad to talk.</p>
+            <a class="mail-big" href="mailto:dinhtanphuc47@gmail.com?subject=Opportunity%20for%20Phuc%20Tan%20Dinh">dinhtanphuc47@gmail.com <i class="bi bi-arrow-up-right"></i></a>
+            <div class="socials">
+              <a href="https://www.facebook.com/phuc.boo.99/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/boosunofmemories/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <form class="form reveal" id="contactForm" action="https://formspree.io/f/xqppdzky" method="POST" novalidate>
+            <label>Name<input type="text" name="name" autocomplete="name" required></label>
+            <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            <label>Message<textarea name="message" rows="4" required></textarea></label>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <button class="btn red" type="submit"><i class="bi bi-send"></i> Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <span>© 2026 Phuc Tan Dinh · QC Engineer · Nha Trang, Vietnam</span>
+      <a href="index.html">View current design</a>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <script src="assets/js/cinematic.js?v=1"></script>
+  <script src="assets/js/live-cursors.js?v=12"></script>
+</body>
+
+</html>
